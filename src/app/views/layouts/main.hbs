@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGBT 229A</title>
+
+    <link rel="shortcut icon" type="imagex/png" href="/public/img/bandeira.ico">
+
+    <link rel="stylesheet" href="/bscss/bootstrap.min.css">
+    <link rel="stylesheet" href="/bscss-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="/mdbcss/mdb.min.css">
+
+    <link rel="stylesheet" href="/public/css/estilo.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark navegacao">
+            <!-- Container wrapper -->
+            <div class="container-fluid">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand mt-2 mt-lg-0" href="/">
+                        <img src="/public/img/logo.png" height="45"
+                            alt="logo"/>
+                    </a>
+                    <!-- Left links -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item botao-sam">
+                            <a class="nav-link" href="/historia">História</a>
+                        </li>
+                        <li class="nav-item botao-sam">
+                            <a class="nav-link" href="/curiosidade">Curiosidade</a>
+                        </li>
+                        <li class="nav-item botao-sam">
+                            <a class="nav-link" href="/contato">Contato</a>
+                        </li>
+                    </ul>
+                    <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+
+                <!-- Right elements -->
+                <div class="d-flex align-items-center perf">
+                    <!-- Avatar -->
+                    <div class="dropdown">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                            class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+                            <path fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+                            </path>
+                        </svg>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuAvatar">
+                            <li>
+                                <a class="dropdown-item" href="/perfil/:{{id}}">My profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/desativar/:{{id}}">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Right elements -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+
+    </header>
+    <main id="principal">
+
+        {{{body}}}
+
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/WilkerSebastia1"
+                    role="button"><i class="fab bi-twitter icone"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://mail.google.com/mail/u/0/?tab=wm#inbox?compose=GTvVlcSBnpsHrcSxjgsSrgJHldWkqtPSPsFWSlZVQFgJmfsdrpWhqPKRLLLjdVFDhbPxFSWhMlqjs"
+                    role="button"><i class="fab bi-google icone"></i></a>
+
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://github.com/WilkerSebastian/projeto-bandeira-dw2" role="button"><i
+                        class="fab bi-github icone"></i></a>
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Text -->
+            <section class="mb-4">
+                <p>
+                    Projeto bandeira que inicialmente foi feito de forma estatica durante a disciplina DW1.Porém agora
+                    feito de forma dinâmica.
+                </p>
+            </section>
+            <!-- Section: Text -->
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <span id="copy"></span>
+                <a class="text-white" href="https://mdbootstrap.com/">Wilker Sebastain</a>
+            </div>
+            <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <script src="/mdbjs/mdb.min.js"></script>
+    <script src="/jquery/jquery.slim.min.js"></script>
+    <script src="/popperjs/popper.min.js"></script>
+    <script src="/bsjs/bootstrap.min.js"></script>
+    <script src="/hbs/handlebars.min.js"></script>
+    <script src="/public/js/mudarCoresRGB.js"></script>
+    <script src="/public/js/main.js"></script>
+
+</body>
+
+</html>
