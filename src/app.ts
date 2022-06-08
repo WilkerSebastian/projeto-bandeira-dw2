@@ -2,6 +2,7 @@ import express from "express";
 import { router } from "./router";
 import { engine } from "express-handlebars";
 import hbshelpers from "handlebars-helpers";
+import cors from "cors";
 
 const helpers = hbshelpers(); 
 
@@ -38,6 +39,7 @@ export class App {
         this.server.use('/popperjs', express.static('./node_modules/@popperjs/core/dist/umd'));
         this.server.use('/hbs', express.static('./node_modules/handlebars/dist/'));
         this.server.use('/public', express.static(__dirname + "/app/public"));
+        this.server.use(cors())
 
         this.server.use(express.urlencoded({ extended: true }));
         this.server.use(express.json());
